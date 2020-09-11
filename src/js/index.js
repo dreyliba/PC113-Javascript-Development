@@ -1,52 +1,7 @@
-const products = [
-    {
-      id: 1,
-      name: 'Lenovo Phone',
-      price: 10400,
-    },
-    {
-      id: 2,
-      name: 'Iphone X',
-      price: 74300,
-    },
-    {
-      id: 3,
-      name: 'Mouse',
-      price: 800,
-    },
-    {
-      id: 4,
-      name: 'keyboard',
-      price: 18000,
-    },
-    {
-      id: 5,
-      name: 'Sony Headset',
-      price: 19500,
-    },
-    {
-      id: 6,
-      name: 'Acer Laptop',
-      price: 25400,
-    },
-  ];
-  
-  const reservedProducts = [
-    {
-      id: 2,
-      name: 'Iphone X',
-      price: 74300,
-    },
-    {
-      id: 5,
-      name: 'Sony Headset',
-      price: 19500,
-    },
-  ];
-  
-  const reservedProd = reservedProducts.map((prod) => prod.id);
-  
-  const prodList = products.filter((prod) => reservedProd.includes(prod.id)
-  );
-  
-  console.log(prodList);
+class Person {
+    getName() {
+        return 'Andrey';
+    }
+}
+const person = new Person();
+console.log(person.getName());
